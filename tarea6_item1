@@ -1,0 +1,63 @@
+1.A
+
+Funcion BusquedaLineal(int arreglo[], int n, int V){
+	
+	int a,b;
+	int match=0;
+	//V=key
+	//n = numero de elementos arreglo
+	//se recorre arreglo
+	for (a=0; a<n; a++){
+		for (b=0; b<n; b++){
+			//condicion para no sumar mismo elemento en arreglo
+			if (a==b)
+				//continua a siguiente ciclo
+				continue;
+			if (arreglo[a]+arreglo[b]==V) // a+b=V
+				//valor match aumenta si existe suma con resultado pedido entre elementos !=
+				match += match;
+		}
+	}
+	//se evita que pares se cuenten dos veces
+	//a+b y b+a corresponden a misma suma
+	match = match/2;
+}
+
+1.B
+
+
+Funcion BusquedaBinaria(int arreglo[], int V, int mayor, int menor){
+	
+	int a,b;
+	int match=0:
+	//V=key
+	//n = numero de elementos arreglo
+	//se recorre arreglo
+	
+	
+	for (a=0; a<n; a++){
+		// valor de arreglo[a]
+		do
+		       med = (menor + mayor)/2
+		           if (x == arr[med])
+		           return med
+	   
+		           else if (x > arr[med]) // x is on the right side
+		               menor = med + 1
+	   
+		           else                  // x is on the left side
+		               mayor = med - 1
+		while(mayor!=menor);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

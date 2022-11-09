@@ -26,29 +26,38 @@ Funcion BusquedaLineal(int arreglo[], int n, int V){
 1.B
 
 
-Funcion BusquedaBinaria(int arreglo[], int V, int mayor, int menor){
-	
-	int a,b;
-	int match=0:
-	//V=key
-	//n = numero de elementos arreglo
-	//se recorre arreglo
-	
-	
-	for (a=0; a<n; a++){
-		// valor de arreglo[a]
-		do
-		       med = (menor + mayor)/2
-		           if (x == arr[med])
-		           return med
-	   
-		           else if (x > arr[med]) // x is on the right side
-		               menor = med + 1
-	   
-		           else                  // x is on the left side
-		               mayor = med - 1
-		while(mayor!=menor);
+// n = total elementos
+// V = Key
+// menor = indice menor en arreglo
+// mayor = indicem mayor en arreglo
+
+
+Busqueda(arreglo[], n, V, menor, mayor){
+	ciclo (a=0; a<n; a++){
+		b = V - arreglo[a]
+		resultado_arreglo = BusquedaBinaria(arr, b, menor, mayor)
+		si (resultado_arreglo != vacio)
+			match = true;
+			//opcion de recorrer resultado_arreglo especificando indices de elementos...
 	}
+}
+
+//se inicia vector de tamaño dinamico que contiene indices de elementos tipo 'b', tal que a + b= V
+//caso lenguaje c++, uso vector
+vector <Arreglo> arr
+BusquedaBinaria(arr, x, menor, mayor)
+        repetir hasta menor = mayor
+               med = (menor + mayor)/2
+                   si (x == arr[med])
+                   	arr.agregar(arr[med])
+                   	
+                   ademas si (x > arr[med]) // x esta al lado derecho
+                       menor = med + 1
+   
+                   sino                  // x esta al lado izquierdo
+                       mayor = med - 1
+	}
+	return arr
 }
 
 
